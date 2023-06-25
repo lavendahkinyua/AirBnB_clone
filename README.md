@@ -26,8 +26,8 @@ Here are a few examples to demonstrate the usage of the command interpreter:
 Creating a User:
 (AirBnB_clone) create User
 Enter user details:
-Name: John Doe
-Email: johndoe@example.com
+Name: Lavendah kinyua
+Email: lavendah17@gmail.com
 Password: ********
 User created with ID: 1
 
