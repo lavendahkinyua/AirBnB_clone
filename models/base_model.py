@@ -29,9 +29,11 @@ class BaseModel:
   def to_dict(self):
     valuesdict = {'__class__':(type(self).__name__)}
     for key,value in self.__dict__.items():
-      if key == "created_at" or key == "updated_at":
-        value = datetime.now()
+      if isinstance(value,datetime):
+        #value = datetime.now()
         value_str = value.isoformat()
         valuesdict[key] = value_str
+      else:
+        valuesdict[key] = value
     return valuesdict
 
