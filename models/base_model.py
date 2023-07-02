@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ defining a class basemodel """
+from models import storage
 import uuid
 #the reason we have used from its because the datetime class is in a module
 from datetime import datetime
@@ -26,6 +27,7 @@ class BaseModel:
      return "[{}] ({}) {}".format(type(self).__name__, self.id, self.__dict__)
   def save(self):
     self.updated_at = datetime.now()
+    storage.save()
   def to_dict(self):
     valuesdict = {'__class__':(type(self).__name__)}
     for key,value in self.__dict__.items():
