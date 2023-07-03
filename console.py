@@ -3,7 +3,7 @@ This module contains the command interpreter for the HBNB program.
 
 The command interpreter provides a command line interface for interacting with the HBNB application.
 """
-
+#!/usr/bin/python3
 import cmd
 
 class HBNBCommand(cmd.Cmd):
