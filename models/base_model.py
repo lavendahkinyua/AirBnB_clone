@@ -2,8 +2,8 @@
 """ defining a class basemodel """
 from models import storage
 import uuid
-"""the reason we have used from its because the datetime class is in a module"""
 from datetime import datetime
+"""reason we have used from its because the datetime class is in a module"""
 """defining a class"""
 
 
