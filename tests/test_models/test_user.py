@@ -1,4 +1,5 @@
-ttest module for the User Class."""
+#!/usr/bin/python3
+"""Unittest module for the User Class."""
 
 import unittest
 from datetime import datetime
