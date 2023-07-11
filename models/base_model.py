@@ -2,11 +2,13 @@
 """ defining a class basemodel """
 from models import storage
 import uuid
-    #the reason we have used from its because the datetime class is in a module
+"""the reason we have used from its because the datetime class is in a module"""
 from datetime import datetime
-#defining a class
+"""defining a class"""
+
+
 class BaseModel:
-    #instance attribute
+    """instance attribute"""
     def __init__(self, *args, **kwargs):
         """Initializes instance attributes
 
@@ -51,4 +53,3 @@ class BaseModel:
         my_dict["created_at"] = my_dict["created_at"].isoformat()
         my_dict["updated_at"] = my_dict["updated_at"].isoformat()
         return my_dict
-
